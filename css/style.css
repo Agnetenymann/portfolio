@@ -73,6 +73,14 @@ img {
   font-style: normal;
 }
 
+/* diana */
+@font-face {
+  font-family: "optidiannascriptlightagen";
+  src: url(../fonte/dianna/optidiannascript-lightagen-webfont.woff2) format("woff2"), url(../fonte/dianna/optidiannascript-lightagen-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 iframe {
   width: 100%;
   height: auto;
@@ -198,9 +206,16 @@ ul {
   margin-right: 1rem;
 }
 
-h4 {
+h4,
+h5 {
   font-size: 60px;
-  font-family: ;
+  font-family: "optidiannascriptlightagen";
+  font-weight: normal;
+  font-style: normal;
+}
+
+h4:hover {
+  transform: scale(1.03);
 }
 
 .div_projekter {
@@ -279,5 +294,46 @@ h4 {
 
   .figma {
     height: 230px;
+  }
+
+  h4,
+  h5 {
+    font-size: 60px;
+    font-family: "optidiannascriptlightagen";
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  h4:hover {
+    transform: scale(1.03);
+    text-shadow: 1px 1px 10px rgb(249, 47, 209);
+  }
+
+  .div_projekter {
+    background-color: rgb(249, 156, 231);
+    padding: 40px;
+  }
+  .projekter_1 {
+    margin-left: 3rem;
+  }
+  .projekter_2 {
+    margin-top: 1rem;
+    margin-left: 14rem;
+  }
+  .projekter_3 {
+    margin-top: 1rem;
+    margin-left: 21rem;
+  }
+  .projekter_4 {
+    margin-top: 1rem;
+    margin-left: 28rem;
+  }
+  .projekter_5 {
+    margin-top: 1rem;
+    margin-left: 35rem;
+  }
+  .projekter_6 {
+    margin-top: 1rem;
+    margin-left: 42rem;
   }
 }
