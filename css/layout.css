@@ -1,0 +1,85 @@
+/*************** Reset *********************/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.grid_1-1_02 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.grid_1-1_04 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.grid_1-1_05 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.galleri_04 {
+  display: grid;
+  gap: 5px;
+}
+
+.grid_1-1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  object-fit: cover;
+  align-self: stretch;
+}
+
+.grid_1-1_02 img {
+  object-fit: cover;
+  align-self: stretch;
+}
+
+.grid_1-1-1-1 img {
+  object-fit: cover;
+  align-self: stretch;
+}
+
+@media (min-width: 800px) {
+  .grid_1-1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .grid_1-1_02 {
+    gap: 50px;
+  }
+  .grid_1-1_04 img {
+    object-fit: cover;
+    align-self: stretch;
+  }
+
+  .div_maren_img {
+    background-color: rgb(244, 239, 235);
+  }
+}

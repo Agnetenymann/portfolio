@@ -1,0 +1,270 @@
+/*************** Reset *********************/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* fonte */
+/* bold */
+@font-face {
+  font-family: "neue_haas_grotesk_display75Bd";
+  src: url(../fonte/neue/neuehaasdisplay-bold-webfont.woff2) format("woff2"), url(../fonte/neue/neuehaasdisplay-bold-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* medium */
+
+@font-face {
+  font-family: "neue_haas_grotesk_display65Md";
+  src: url(../fonte/neue/neuehaasdisplay-mediu-webfont.woff2) format("woff2"), url(../fonte/neue/neuehaasdisplay-mediu-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* light  */
+
+@font-face {
+  font-family: "neue_haas_grotesk_display45Lt";
+  src: url(../fonte/neue/neuehaasdisplay-light-webfont.woff2) format("woff2"), url(../fonte/neue/neuehaasdisplay-light-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* thin */
+
+@font-face {
+  font-family: "neue_haas_grotesk_display35Th";
+  src: url(../fonte/neue/neuehaasdisplay-thin-webfont.woff2) format("woff2"), url(../fonte/neue/neuehaasdisplay-thin-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* black */
+
+@font-face {
+  font-family: "neue_haas_grotesk_displa95Blk";
+  src: url(../fonte/neue/neuehaasdisplay-black-webfont.woff2) format("woff2"), url(../fonte/neue/neuehaasdisplay-black-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* roman */
+@font-face {
+  font-family: "neue_haas_grotesk_disp55roman";
+  src: url(../fonte/neue/neue2/neuehaasdisplay-roman-webfont.woff2) format("woff2"), url(../fonte/neue/neue2/neuehaasdisplay-roman-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* lignt italic */
+
+@font-face {
+  font-family: "neue_haas_grotesk_displ36ThIt";
+  src: url(../fonte/neue/neue2/neuehaasdisplay-thinitalic-webfont.woff2) format("woff2"), url(../fonte/neue/neue2/neuehaasdisplay-thinitalic-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+body {
+  background-color: rgb(245, 245, 245);
+}
+
+main {
+  margin: 0 auto;
+}
+
+.hero_sprutter {
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "neue_haas_grotesk_display35Th";
+  font-size: 48px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+span {
+  font-family: "neue_haas_grotesk_display65Md";
+  font-size: 50px;
+}
+
+h2 {
+  font-family: "neue_haas_grotesk_display75Bd";
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h3 {
+  font-family: "neue_haas_grotesk_display75Bd";
+  font-size: 26px;
+  color: rgb(0, 0, 0);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.link {
+  font-size: 17px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-family: "neue_haas_grotesk_display65Md";
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.link a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-family: "neue_haas_grotesk_display65Md";
+}
+
+p {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  text-wrap: pretty;
+  line-height: 1.8rem;
+  text-align: start;
+  /* max-width: 75ch; */
+  align-items: start;
+  margin: 0 auto;
+  font-family: "neue_haas_grotesk_display35Th";
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.p_tema {
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  text-wrap: pretty;
+  line-height: 1.8rem;
+  text-align: start;
+  /* max-width: 75ch; */
+  align-items: start;
+  margin: 0 auto;
+  font-family: "neue_haas_grotesk_disp55roman";
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+ul {
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  text-wrap: pretty;
+  line-height: 1.8rem;
+  text-align: start;
+  align-items: start;
+  margin: 0 auto;
+  font-family: "neue_haas_grotesk_disp55roman";
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.div_01,
+.div_02,
+.div_03,
+.div_04,
+.div_05 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+@media (min-width: 800px) {
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: rgb(245, 245, 245);
+  }
+
+  .hero_sprutter {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-family: "neue_haas_grotesk_display35Th";
+    font-size: 70px;
+    color: rgb(0, 0, 0);
+    text-align: start;
+  }
+
+  span {
+    font-family: "neue_haas_grotesk_display65Md";
+    font-size: 96px;
+  }
+
+  h2 {
+    font-family: "neue_haas_grotesk_display75Bd";
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: start;
+  }
+
+  h3 {
+    font-family: "neue_haas_grotesk_display75Bd";
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: start;
+  }
+
+  a {
+    font-size: 22px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: "neue_haas_grotesk_display65Md";
+  }
+
+  p {
+    font-size: 22px;
+  }
+
+  .p_tema {
+    font-size: 22px;
+    margin-left: 0;
+  }
+
+  .div_01,
+  .div_02,
+  .div_03,
+  .div_04,
+  .div_05 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .figma {
+    height: 230px;
+  }
+}
