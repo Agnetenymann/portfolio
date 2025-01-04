@@ -198,6 +198,15 @@ ul {
   margin-right: 1rem;
 }
 
+h4 {
+  font-size: 60px;
+  font-family: ;
+}
+
+.div_projekter {
+  background-color: rgb(249, 156, 231);
+}
+
 @media (min-width: 800px) {
   main {
     max-width: 1000px;
