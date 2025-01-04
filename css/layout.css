@@ -53,6 +53,11 @@ img {
   align-self: stretch;
 }
 
+.grid_1-1_04 img {
+  object-fit: cover;
+  align-self: stretch;
+}
+
 .grid_1-1-1-1 img {
   object-fit: cover;
   align-self: stretch;

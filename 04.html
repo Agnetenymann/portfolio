@@ -8,6 +8,7 @@
     <title>T04</title>
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/menutest.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,25 +16,31 @@
   </head>
   <body>
     <div class="top">
-      <header class="header_spread">
+      <header>
         <div class="logo">
           <img src="" alt="nyma" />
         </div>
-        <div>AGNETE NYMANN</div>
         <nav>
           <ul class="menu">
-            <li><a href="index.html">Forside</a></li>
-            <li><a href="01.html">T01</a></li>
-            <li><a href="02.html">T02</a></li>
-            <li><a href="03.html">T03</a></li>
-            <li><a href="04.html">T04</a></li>
-            <li><a href="05.html">T05</a></li>
-            <li><a href="ommig.html">Om mig</a></li>
+            <div class="grid_row">
+              <div class="div_header_1">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="ommig.html">Om mig</a></li>
+              </div>
+              <div class="div_header_2">
+                <li><a href="01.html">T01</a></li>
+                <li><a href="02.html">T02</a></li>
+                <li><a href="03.html">T03</a></li>
+                <li><a href="04.html">T04</a></li>
+                <li><a href="05.html">T05</a></li>
+              </div>
+            </div>
           </ul>
           <div class="burger">
+            [MENU]
+            <!-- <div class="line"></div>
             <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
+            <div class="line"></div> -->
           </div>
         </nav>
       </header>
@@ -82,7 +89,7 @@
           fungerede rigtig godt! Var også i tvivl om den skulle have en hat, hvilken farve hat, hvilke sko/sokker osv. Men synes den endte rigtig godt! Flaget til højre er det endelige flag, jeg brugte i mit spil.
         </p>
         <div class="grid_1-1">
-          <img src="imgs/04/flag_process-kopi.webp" alt="flag" style="width: 110%" />
+          <img src="imgs/04/flag_process-kopi.webp" alt="flag" style="width: 100%" />
           <img src="imgs/04/flag_normal-kopi.svg" alt="flag_færdig" style="width: 80%; margin-left: 5rem" />
         </div>
         <div class="link">
@@ -121,4 +128,5 @@
       </div>
     </main>
   </body>
+  <script src="burger.js"></script>
 </html>

@@ -1,0 +1,166 @@
+/*************** Reset *********************/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+header {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  font-family: "neue_haas_grotesk_display75Bd";
+  font-size: 20px;
+  z-index: 10;
+  background-color: rgb(245, 245, 245);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.top {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+}
+
+.div_header_1 {
+  display: flex;
+  flex-direction: rows;
+  justify-content: space-around;
+}
+
+.div_header_2 {
+  display: flex;
+  flex-direction: rows;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.grid_row {
+  place-self: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.menu {
+  display: none;
+  list-style: none;
+}
+
+.menu a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+  font-family: "neue_haas_grotesk_display75Bd";
+}
+
+.logo {
+  /* height: 100%; */
+  width: 80px;
+}
+
+.burger {
+  height: 20px;
+  cursor: pointer;
+  margin-right: 3rem;
+}
+
+.burger {
+  display: block;
+}
+
+nav.active .menu {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(245, 245, 245);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 98%;
+  height: 250px;
+  z-index: 1;
+}
+
+nav.active .menu li {
+  margin: 5px 20px;
+}
+
+nav.active .menu a {
+  font-size: 58px;
+  color: rgb(0, 0, 0);
+  font-family: "neue_haas_grotesk_display75Bd";
+}
+
+nav.active .menu a:hover {
+  transform: scale(1.1);
+  color: rgb(251, 19, 173);
+}
+
+@media (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+    margin: 1em;
+  }
+
+  .div_header_1 {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: rows;
+    justify-content: space-around;
+  }
+
+  .div_header_2 {
+    display: flex;
+    flex-direction: rows;
+    justify-content: space-around;
+  }
+
+  .grid_row {
+    place-self: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 94px;
+    width: 95%;
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 5px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 32px;
+    color: rgb(0, 0, 0);
+    font-family: "neue_haas_grotesk_display75Bd";
+  }
+
+  nav.active .menu a:hover {
+    transform: scale(1.1);
+    color: rgb(251, 19, 173);
+  }
+}

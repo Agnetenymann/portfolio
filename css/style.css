@@ -102,7 +102,8 @@ h1 {
   font-size: 48px;
   color: rgb(0, 0, 0);
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
 }
 
 span {
@@ -214,6 +215,9 @@ ul {
     font-size: 70px;
     color: rgb(0, 0, 0);
     text-align: start;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 4rem;
   }
 
   span {

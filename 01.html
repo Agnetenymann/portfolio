@@ -8,32 +8,38 @@
     <title>T01</title>
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/style.css" />
-
+    <link rel="stylesheet" href="css/menutest.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet" />
   </head>
   <body>
     <div class="top">
-      <header class="header_spread">
+      <header>
         <div class="logo">
           <img src="" alt="nyma" />
         </div>
-        <div>AGNETE NYMANN</div>
         <nav>
           <ul class="menu">
-            <li><a href="index.html">Forside</a></li>
-            <li><a href="01.html">T01</a></li>
-            <li><a href="02.html">T02</a></li>
-            <li><a href="03.html">T03</a></li>
-            <li><a href="04.html">T04</a></li>
-            <li><a href="05.html">T05</a></li>
-            <li><a href="ommig.html">Om mig</a></li>
+            <div class="grid_row">
+              <div class="div_header_1">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="ommig.html">Om mig</a></li>
+              </div>
+              <div class="div_header_2">
+                <li><a href="01.html">T01</a></li>
+                <li><a href="02.html">T02</a></li>
+                <li><a href="03.html">T03</a></li>
+                <li><a href="04.html">T04</a></li>
+                <li><a href="05.html">T05</a></li>
+              </div>
+            </div>
           </ul>
           <div class="burger">
+            [MENU]
+            <!-- <div class="line"></div>
             <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
+            <div class="line"></div> -->
           </div>
         </nav>
       </header>
@@ -50,9 +56,6 @@
       <div class="div_01">
         <p>Vi besluttede ret tidligt i processen at vi ønskede at lave en video med stærk inspiration fra filmen ”Inders inde”. Da vi synes det var en sjov måde at få præsenteret folk. I videoen følger vi en ny studerende på KEA, som går igennem hele følelsesregistret på vedkommendes første skoledag.</p>
         <p>Vi udviklede storyboards, aftalte rollerne og fandt kostumer, så vi hurtigt kunne komme ud at filme. Alt materiale vi brugte i filmen var produceret af os, og det fungerede rigtig godt. Filmen er klippet i Premier Pro, og musikken vi brugte, kom fra FMA, hedder Morning moon og er lavet af Happy Prescriptions.</p>
-        <div class="link">
-          <a href="" target="_blank">Udforsk storyboardet➜</a>
-        </div>
       </div>
       <h2>[endeligt produkt]</h2>
       <div class="div_01">
@@ -60,4 +63,5 @@
       </div>
     </main>
   </body>
+  <script src="burger.js"></script>
 </html>
