@@ -108,7 +108,7 @@ nav.active .menu a {
 
 nav.active .menu a:hover {
   transform: scale(1.1);
-  color: rgb(251, 19, 173);
+  color: rgb(249, 47, 209);
 }
 
 @media (max-width: 800px) {
