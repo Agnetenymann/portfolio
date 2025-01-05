@@ -105,6 +105,14 @@ main {
   margin: 0 auto;
 }
 
+.hero {
+  width: auto;
+  margin: 0 auto;
+  margin-top: -5rem;
+}
+
+/* tekst */
+
 h1 {
   font-family: "neue_haas_grotesk_display35Th";
   font-size: 48px;
@@ -154,9 +162,9 @@ h3 {
 
 p {
   color: rgb(0, 0, 0);
-  font-size: 16px;
+  font-size: 17px;
   text-wrap: pretty;
-  line-height: 1.8rem;
+  line-height: 1.9rem;
   text-align: start;
   /* max-width: 75ch; */
   align-items: start;
@@ -168,9 +176,9 @@ p {
 
 .p_tema {
   color: rgb(0, 0, 0);
-  font-size: 17px;
+  font-size: 18px;
   text-wrap: pretty;
-  line-height: 1.8rem;
+  line-height: 1.9rem;
   text-align: start;
   /* max-width: 75ch; */
   align-items: start;
@@ -197,6 +205,8 @@ ul {
   margin-right: 1rem;
 }
 
+/* tekstopsætning */
+
 .div_01,
 .div_02,
 .div_03,
@@ -206,6 +216,72 @@ ul {
   margin-right: 1rem;
 }
 
+.div_06 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.p_italic {
+  font-family: "neue_haas_grotesk_displ36ThIt";
+}
+
+h4,
+h5 {
+  font-size: 35px;
+  font-family: "optidiannascriptlightagen";
+  font-weight: normal;
+  font-style: normal;
+  color: black;
+}
+
+h4:hover {
+  transform: scale(1.03);
+  color: rgb(249, 47, 209);
+  text-shadow: 5px 5px 10px rgb(249, 47, 209);
+}
+
+a {
+  text-decoration: none;
+}
+
+.h1_agnete {
+  font-family: "neue_haas_grotesk_display75Bd";
+  font-size: 80px;
+  text-align: center;
+  margin-top: 7rem;
+  margin-bottom: -6rem;
+  text-shadow: 10px 10px 10px rgb(249, 47, 209);
+  color: rgb(255, 255, 255);
+}
+
+.h1_agnete2 {
+  font-family: "neue_haas_grotesk_display75Bd";
+  font-size: 70px;
+  text-align: center;
+  margin-bottom: 5rem;
+  margin-top: -1rem;
+  color: rgb(249, 47, 209);
+}
+
+.h1_ommig {
+  font-family: "optidiannascriptlightagen";
+  font-size: 35px;
+  margin-top: -16rem;
+  margin-left: 2rem;
+  font-weight: normal;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+}
+.h1_hej {
+  font-family: "neue_haas_grotesk_disp55roman";
+  font-size: 22px;
+  margin-bottom: 14rem;
+  margin-top: -0.8rem;
+  margin-left: 3rem;
+  color: rgb(255, 255, 255);
+}
+
+/* footer styling */
 .div_footer {
   display: flex;
   justify-content: center;
@@ -224,7 +300,7 @@ ul {
   color: black;
   text-decoration: none;
   margin-bottom: 4rem;
-  font-size: 30px;
+  font-size: 24px;
   font-family: "optidiannascriptlightagen";
   font-weight: normal;
   font-style: normal;
@@ -238,51 +314,34 @@ ul {
   text-shadow: 5px 5px 10px rgb(249, 47, 209);
 }
 
-h4,
-h5 {
-  font-size: 35px;
-  font-family: "optidiannascriptlightagen";
-  font-weight: normal;
-  font-style: normal;
-  color: black;
-}
-
-h4:hover {
-  transform: scale(1.03);
-  color: rgb(249, 47, 209);
-  text-shadow: 5px 5px 10px rgb(249, 47, 209);
-}
+/* projekter forside styling */
 
 .div_projekter {
   background-color: rgb(249, 156, 231);
 }
 
 .projekter_1 {
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 .projekter_2 {
   margin-top: 1rem;
-  margin-left: 8rem;
+  margin-left: 4rem;
 }
 .projekter_3 {
   margin-top: 1rem;
-  margin-left: 12rem;
+  margin-left: 7rem;
 }
 .projekter_4 {
   margin-top: 1rem;
-  margin-left: 16rem;
+  margin-left: 10rem;
 }
 .projekter_5 {
   margin-top: 1rem;
-  margin-left: 20rem;
+  margin-left: 13rem;
 }
 .projekter_6 {
   margin-top: 1rem;
-  margin-left: 24rem;
-}
-
-a {
-  text-decoration: none;
+  margin-left: 16rem;
 }
 
 .linje {
@@ -291,6 +350,140 @@ a {
   width: 85%;
   margin: 0 auto;
   margin-top: 2rem;
+}
+
+/* animation */
+
+@keyframes infiniteScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.container {
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(249, 156, 231);
+  margin-top: 5rem;
+}
+.horizontal-scrolling-items {
+  display: flex;
+  width: 1200px;
+  animation-name: infiniteScroll;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background-color: rgb(249, 156, 231);
+}
+
+.horizontal-scrolling-items__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  font-family: "neue_haas_grotesk_display65Md";
+  height: 90px;
+}
+@media (min-width: 400px) {
+  /* projekter forside styling */
+
+  .div_projekter {
+    background-color: rgb(249, 156, 231);
+  }
+
+  .projekter_1 {
+    margin-left: 2rem;
+  }
+  .projekter_2 {
+    margin-top: 1rem;
+    margin-left: 8rem;
+  }
+  .projekter_3 {
+    margin-top: 1rem;
+    margin-left: 12rem;
+  }
+  .projekter_4 {
+    margin-top: 1rem;
+    margin-left: 16rem;
+  }
+  .projekter_5 {
+    margin-top: 1rem;
+    margin-left: 20rem;
+  }
+  .projekter_6 {
+    margin-top: 1rem;
+    margin-left: 24rem;
+  }
+  /* footer */
+  .f1,
+  .f2,
+  .f3,
+  .f4,
+  .f5 {
+    display: flex;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 3rem;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 4rem;
+    font-size: 30px;
+    font-family: "optidiannascriptlightagen";
+    font-weight: normal;
+    font-style: normal;
+  }
+  .f1:hover,
+  .f2:hover,
+  .f3:hover,
+  .f4:hover,
+  .f5:hover {
+    transform: scale(1.03);
+    text-shadow: 5px 5px 10px rgb(249, 47, 209);
+  }
+  .h1_agnete {
+    font-family: "neue_haas_grotesk_display75Bd";
+    font-size: 110px;
+    text-align: center;
+    margin-top: 7rem;
+    margin-bottom: -8rem;
+    text-shadow: 10px 10px 10px rgb(249, 47, 209);
+    color: rgb(255, 255, 255);
+  }
+
+  .h1_agnete2 {
+    font-family: "neue_haas_grotesk_display75Bd";
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: 5rem;
+    margin-top: -1rem;
+    color: rgb(249, 47, 209);
+  }
+
+  .h1_ommig {
+    font-family: "optidiannascriptlightagen";
+    font-size: 50px;
+    margin-top: -23.5rem;
+    margin-left: 2rem;
+    font-weight: normal;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+  }
+  .h1_hej {
+    font-family: "neue_haas_grotesk_disp55roman";
+    font-size: 36px;
+    margin-bottom: 20rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    color: rgb(255, 255, 255);
+  }
 }
 
 @media (min-width: 800px) {
@@ -318,6 +511,42 @@ a {
   span {
     font-family: "neue_haas_grotesk_display65Md";
     font-size: 96px;
+  }
+
+  .h1_agnete {
+    font-family: "neue_haas_grotesk_display75Bd";
+    font-size: 250px;
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: -15rem;
+    text-shadow: 10px 10px 10px rgb(249, 47, 209);
+    color: rgb(255, 255, 255);
+  }
+
+  .h1_agnete2 {
+    font-family: "neue_haas_grotesk_display75Bd";
+    font-size: 230px;
+    text-align: center;
+    margin-bottom: 10rem;
+    color: rgb(249, 47, 209);
+  }
+
+  .h1_ommig {
+    font-family: "optidiannascriptlightagen";
+    font-size: 100px;
+    margin-top: -42.5rem;
+    margin-left: 2rem;
+    font-weight: normal;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+  }
+  .h1_hej {
+    font-family: "neue_haas_grotesk_disp55roman";
+    font-size: 70px;
+    margin-bottom: 37rem;
+    margin-left: 5rem;
+    margin-top: 4rem;
+    color: rgb(255, 255, 255);
   }
 
   h2 {
@@ -361,6 +590,11 @@ a {
   .div_05 {
     margin-left: 4rem;
     margin-right: 4rem;
+  }
+
+  .div_06 {
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
 
   .figma {
