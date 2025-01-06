@@ -190,6 +190,15 @@ p {
   margin-right: 1rem;
 }
 
+.p_forside {
+  font-size: 24px;
+  max-width: 60ch;
+  background-color: rgb(245, 245, 245);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 20px;
+}
+
 ul {
   color: rgb(0, 0, 0);
   font-size: 15px;
@@ -316,8 +325,16 @@ a {
 
 /* projekter forside styling */
 
+.div_tekstforside {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
 .div_projekter {
   background-color: rgb(249, 156, 231);
+  place-self: center;
 }
 
 .projekter_1 {
@@ -397,6 +414,20 @@ a {
 
   .div_projekter {
     background-color: rgb(249, 156, 231);
+  }
+
+  .div_tekstforside {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .div_tekstforside img {
+    width: 60%;
+    height: auto;
+    display: block;
+    place-self: center;
   }
 
   .projekter_1 {
@@ -491,6 +522,16 @@ a {
     max-width: 1000px;
     margin: 0 auto;
     background-color: rgb(245, 245, 245);
+  }
+  .div_tekstforside {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .div_tekstforside img {
+    width: 100%;
   }
 
   .hero_sprutter {
@@ -618,6 +659,8 @@ a {
   .div_projekter {
     background-color: rgb(249, 156, 231);
     padding: 40px;
+    height: 800px;
+    place-content: center;
   }
   .projekter_1 {
     margin-left: 3rem;

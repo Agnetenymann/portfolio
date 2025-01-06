@@ -38,7 +38,7 @@ nav {
 .div_header_1 {
   display: flex;
   flex-direction: rows;
-  justify-content: space-around;
+  place-self: center;
 }
 
 .div_header_2 {
@@ -78,6 +78,11 @@ h6 {
   margin-left: 1rem;
 }
 
+.logo:hover {
+  transition: 0.2s;
+  filter: grayscale(100%) contrast(700%);
+}
+
 .burger {
   height: 20px;
   cursor: pointer;
@@ -94,11 +99,12 @@ nav.active .menu {
   background-color: rgb(245, 245, 245);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   position: absolute;
-  top: 80px;
+  top: 73px;
   left: 0;
-  width: 98%;
+  width: 100%;
   height: 250px;
   z-index: 1;
+  margin-left: 0;
 }
 
 nav.active .menu li {
@@ -121,6 +127,10 @@ nav.active .menu a:hover {
   transform: scale(1.02);
 }
 
+.menu_hover.active {
+  color: rgb(249, 47, 209);
+}
+
 @media (max-width: 800px) {
   .menu {
     display: none;
@@ -134,7 +144,7 @@ nav.active .menu a:hover {
     margin-top: 4rem;
     display: flex;
     flex-direction: rows;
-    justify-content: space-around;
+    place-self: center;
   }
 
   .div_header_2 {
@@ -154,8 +164,8 @@ nav.active .menu a:hover {
     background-color: rgb(245, 245, 245);
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
     position: absolute;
-    top: 94px;
-    width: 95%;
+    top: 73px;
+    width: 100%;
     z-index: 1;
   }
 
@@ -188,7 +198,7 @@ nav.active .menu a:hover {
     margin-top: 4rem;
     display: flex;
     flex-direction: rows;
-    justify-content: space-around;
+    place-self: center;
   }
 
   .div_header_2 {
@@ -208,8 +218,8 @@ nav.active .menu a:hover {
     background-color: rgb(245, 245, 245);
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
     position: absolute;
-    top: 94px;
-    width: 90%;
+    top: 70px;
+    width: 100%;
     z-index: 1;
   }
 
