@@ -127,6 +127,48 @@ span {
   font-size: 50px;
 }
 
+.h1_agnete {
+  font-family: "neue_haas_grotesk_display65Md";
+  font-size: 80px;
+  text-align: center;
+  margin-top: 7rem;
+  margin-bottom: 6rem;
+  text-shadow: 1px 1px 25px rgb(249, 47, 209);
+  color: rgb(0, 0, 0);
+}
+
+.h1_agnete2 {
+  font-family: "neue_haas_grotesk_display65Md";
+  font-size: 70px;
+  text-align: center;
+  margin-bottom: 5rem;
+  margin-top: 1rem;
+  text-shadow: 1px 1px 25px rgb(249, 47, 209);
+  color: rgb(0, 0, 0);
+}
+
+.radial-gradient {
+  background: radial-gradient(circle 80px at center center, rgb(249, 47, 209), aqua, rgb(157, 255, 0), gold, rgb(245, 245, 245));
+}
+
+.h1_ommig {
+  font-family: "optidiannascriptlightagen";
+  font-size: 35px;
+  margin-top: -16rem;
+  margin-left: 2rem;
+  font-weight: normal;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+}
+.h1_hej {
+  font-family: "neue_haas_grotesk_disp55roman";
+  font-size: 22px;
+  margin-bottom: 14rem;
+  margin-top: -0.8rem;
+  margin-left: 3rem;
+  color: rgb(255, 255, 255);
+}
+
 h2 {
   font-family: "neue_haas_grotesk_display75Bd";
   font-size: 30px;
@@ -158,6 +200,10 @@ h3 {
   text-decoration: none;
   color: rgb(0, 0, 0);
   font-family: "neue_haas_grotesk_display65Md";
+}
+
+.link:hover {
+  text-shadow: 1px 1px 5px rgb(252, 131, 228);
 }
 
 p {
@@ -253,43 +299,6 @@ a {
   text-decoration: none;
 }
 
-.h1_agnete {
-  font-family: "neue_haas_grotesk_display75Bd";
-  font-size: 80px;
-  text-align: center;
-  margin-top: 7rem;
-  margin-bottom: -6rem;
-  text-shadow: 10px 10px 10px rgb(249, 47, 209);
-  color: rgb(255, 255, 255);
-}
-
-.h1_agnete2 {
-  font-family: "neue_haas_grotesk_display75Bd";
-  font-size: 70px;
-  text-align: center;
-  margin-bottom: 5rem;
-  margin-top: -1rem;
-  color: rgb(249, 47, 209);
-}
-
-.h1_ommig {
-  font-family: "optidiannascriptlightagen";
-  font-size: 35px;
-  margin-top: -16rem;
-  margin-left: 2rem;
-  font-weight: normal;
-  font-style: normal;
-  color: rgb(255, 255, 255);
-}
-.h1_hej {
-  font-family: "neue_haas_grotesk_disp55roman";
-  font-size: 22px;
-  margin-bottom: 14rem;
-  margin-top: -0.8rem;
-  margin-left: 3rem;
-  color: rgb(255, 255, 255);
-}
-
 /* footer styling */
 .div_footer {
   display: flex;
@@ -380,13 +389,14 @@ a {
   }
 }
 .container {
-  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgb(249, 156, 231);
   margin-top: 5rem;
+  margin-bottom: 4rem;
 }
 .horizontal-scrolling-items {
   display: flex;
@@ -480,22 +490,27 @@ a {
     text-shadow: 5px 5px 10px rgb(249, 47, 209);
   }
   .h1_agnete {
-    font-family: "neue_haas_grotesk_display75Bd";
+    font-family: "neue_haas_grotesk_display65Md";
     font-size: 110px;
     text-align: center;
     margin-top: 7rem;
-    margin-bottom: -8rem;
-    text-shadow: 10px 10px 10px rgb(249, 47, 209);
-    color: rgb(255, 255, 255);
+    margin-bottom: 8rem;
+    text-shadow: 1px 1px 25px rgb(249, 47, 209);
+    color: rgb(0, 0, 0);
   }
 
   .h1_agnete2 {
-    font-family: "neue_haas_grotesk_display75Bd";
+    font-family: "neue_haas_grotesk_display65Md";
     font-size: 100px;
     text-align: center;
     margin-bottom: 5rem;
-    margin-top: -1rem;
-    color: rgb(249, 47, 209);
+    margin-top: 1rem;
+    text-shadow: 1px 1px 25px rgb(249, 47, 209);
+    color: rgb(0, 0, 0);
+  }
+
+  .radial-gradient {
+    background: radial-gradient(circle 100px at center center, rgb(249, 47, 209), aqua, rgb(157, 255, 0), gold, rgb(245, 245, 245));
   }
 
   .h1_ommig {
@@ -514,6 +529,27 @@ a {
     margin-left: 3rem;
     margin-top: 1rem;
     color: rgb(255, 255, 255);
+  }
+}
+
+@media (min-width: 600px) {
+  .h1_agnete {
+    font-family: "DM Serif Text", serif;
+    font-size: 167px;
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 15rem;
+    text-shadow: 1px 1px 45px rgb(249, 47, 209);
+    color: rgb(0, 0, 0);
+  }
+
+  .h1_agnete2 {
+    font-family: "DM Serif Text", serif;
+    font-size: 160px;
+    text-align: center;
+    margin-bottom: 10rem;
+    text-shadow: 1px 1px 45px rgb(249, 47, 209);
+    color: rgb(0, 0, 0);
   }
 }
 
@@ -555,21 +591,22 @@ a {
   }
 
   .h1_agnete {
-    font-family: "neue_haas_grotesk_display75Bd";
-    font-size: 250px;
+    font-family: "neue_haas_grotesk_disp55roman";
+    font-size: 210px;
     text-align: center;
     margin-top: 10rem;
-    margin-bottom: -15rem;
-    text-shadow: 10px 10px 10px rgb(249, 47, 209);
-    color: rgb(255, 255, 255);
+    margin-bottom: 15rem;
+    text-shadow: 1px 1px 45px rgb(249, 47, 209);
+    color: rgb(0, 0, 0);
   }
 
   .h1_agnete2 {
-    font-family: "neue_haas_grotesk_display75Bd";
-    font-size: 230px;
+    font-family: "neue_haas_grotesk_disp55roman";
+    font-size: 200px;
     text-align: center;
     margin-bottom: 10rem;
-    color: rgb(249, 47, 209);
+    text-shadow: 1px 1px 45px rgb(249, 47, 209);
+    color: rgb(0, 0, 0);
   }
 
   .h1_ommig {
