@@ -106,7 +106,7 @@ main {
 }
 
 .hero {
-  width: auto;
+  width: 100%;
   margin: 0 auto;
   margin-top: -5rem;
 }
@@ -120,6 +120,8 @@ h1 {
   text-align: center;
   margin-bottom: 2rem;
   margin-top: 4rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 span {
@@ -128,7 +130,7 @@ span {
 }
 
 .h1_agnete {
-  font-family: "neue_haas_grotesk_display65Md";
+  font-family: "DM Serif Text", serif;
   font-size: 80px;
   text-align: center;
   margin-top: 7rem;
@@ -138,7 +140,7 @@ span {
 }
 
 .h1_agnete2 {
-  font-family: "neue_haas_grotesk_display65Md";
+  font-family: "DM Serif Text", serif;
   font-size: 70px;
   text-align: center;
   margin-bottom: 5rem;
@@ -232,16 +234,14 @@ p {
   font-family: "neue_haas_grotesk_disp55roman";
   margin-top: 1rem;
   margin-bottom: 2rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .p_forside {
-  font-size: 24px;
+  font-size: 20px;
   max-width: 60ch;
-  background-color: rgb(245, 245, 245);
   margin-top: 2rem;
-  margin-bottom: 2rem;
   padding: 20px;
 }
 
@@ -267,8 +267,8 @@ ul {
 .div_03,
 .div_04,
 .div_05 {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .div_06 {
@@ -282,7 +282,7 @@ ul {
 
 h4,
 h5 {
-  font-size: 35px;
+  font-size: 30px;
   font-family: "optidiannascriptlightagen";
   font-weight: normal;
   font-style: normal;
@@ -332,6 +332,28 @@ a {
   text-shadow: 5px 5px 10px rgb(249, 47, 209);
 }
 
+/* CV styling */
+
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 21px 1fr;
+}
+
+.uddannelse p {
+  text-align: right;
+}
+
+.cv_linje {
+  background-color: black;
+  width: 1px;
+  height: auto;
+  margin: 10px;
+}
+
+.p_cv {
+  font-family: "neue_haas_grotesk_display65Md";
+}
+
 /* projekter forside styling */
 
 .div_tekstforside {
@@ -341,33 +363,18 @@ a {
   margin: 0 auto;
 }
 
-.div_projekter {
-  background-color: rgb(249, 156, 231);
+.logo_forside {
+  width: 40%;
   place-self: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
-.projekter_1 {
-  margin-left: 1rem;
-}
-.projekter_2 {
-  margin-top: 1rem;
-  margin-left: 4rem;
-}
-.projekter_3 {
-  margin-top: 1rem;
-  margin-left: 7rem;
-}
-.projekter_4 {
-  margin-top: 1rem;
-  margin-left: 10rem;
-}
-.projekter_5 {
-  margin-top: 1rem;
-  margin-left: 13rem;
-}
-.projekter_6 {
-  margin-top: 1rem;
-  margin-left: 16rem;
+.div_projekter {
+  display: flex;
+  place-content: space-evenly;
+  text-align: center;
+  margin-bottom: 4rem;
 }
 
 .linje {
@@ -375,7 +382,16 @@ a {
   height: 1px;
   width: 85%;
   margin: 0 auto;
+  margin-top: 0rem;
+}
+
+.til_toppen {
+  margin-left: 3rem;
   margin-top: 2rem;
+}
+
+.til_toppen:hover {
+  font-family: "neue_haas_grotesk_disp55roman";
 }
 
 /* animation */
@@ -423,7 +439,8 @@ a {
   /* projekter forside styling */
 
   .div_projekter {
-    background-color: rgb(249, 156, 231);
+    display: flex;
+    place-content: space-evenly;
   }
 
   .div_tekstforside {
@@ -434,35 +451,12 @@ a {
   }
 
   .div_tekstforside img {
-    width: 60%;
+    width: 50%;
     height: auto;
     display: block;
     place-self: center;
   }
 
-  .projekter_1 {
-    margin-left: 2rem;
-  }
-  .projekter_2 {
-    margin-top: 1rem;
-    margin-left: 8rem;
-  }
-  .projekter_3 {
-    margin-top: 1rem;
-    margin-left: 12rem;
-  }
-  .projekter_4 {
-    margin-top: 1rem;
-    margin-left: 16rem;
-  }
-  .projekter_5 {
-    margin-top: 1rem;
-    margin-left: 20rem;
-  }
-  .projekter_6 {
-    margin-top: 1rem;
-    margin-left: 24rem;
-  }
   /* footer */
   .f1,
   .f2,
@@ -490,7 +484,7 @@ a {
     text-shadow: 5px 5px 10px rgb(249, 47, 209);
   }
   .h1_agnete {
-    font-family: "neue_haas_grotesk_display65Md";
+    font-family: "DM Serif Text", serif;
     font-size: 110px;
     text-align: center;
     margin-top: 7rem;
@@ -500,7 +494,7 @@ a {
   }
 
   .h1_agnete2 {
-    font-family: "neue_haas_grotesk_display65Md";
+    font-family: "DM Serif Text", serif;
     font-size: 100px;
     text-align: center;
     margin-bottom: 5rem;
@@ -543,6 +537,14 @@ a {
     color: rgb(0, 0, 0);
   }
 
+  .til_toppen {
+    margin-left: 8rem;
+    margin-top: 2rem;
+  }
+
+  .radial-gradient {
+    background: radial-gradient(circle 130px at center center, rgb(249, 47, 209), aqua, rgb(157, 255, 0), gold, rgb(245, 245, 245));
+  }
   .h1_agnete2 {
     font-family: "DM Serif Text", serif;
     font-size: 160px;
@@ -558,16 +560,6 @@ a {
     max-width: 1000px;
     margin: 0 auto;
     background-color: rgb(245, 245, 245);
-  }
-  .div_tekstforside {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-
-  .div_tekstforside img {
-    width: 100%;
   }
 
   .hero_sprutter {
@@ -591,7 +583,7 @@ a {
   }
 
   .h1_agnete {
-    font-family: "neue_haas_grotesk_disp55roman";
+    font-family: "DM Serif Text", serif;
     font-size: 210px;
     text-align: center;
     margin-top: 10rem;
@@ -601,12 +593,16 @@ a {
   }
 
   .h1_agnete2 {
-    font-family: "neue_haas_grotesk_disp55roman";
+    font-family: "DM Serif Text", serif;
     font-size: 200px;
     text-align: center;
     margin-bottom: 10rem;
     text-shadow: 1px 1px 45px rgb(249, 47, 209);
     color: rgb(0, 0, 0);
+  }
+
+  .radial-gradient {
+    background: radial-gradient(circle 160px at center center, rgb(249, 47, 209), aqua, rgb(157, 255, 0), gold, rgb(245, 245, 245));
   }
 
   .h1_ommig {
@@ -661,6 +657,13 @@ a {
     margin-left: 0;
   }
 
+  .p_forside {
+    font-size: 22px;
+    max-width: 60ch;
+    margin-top: 2rem;
+    margin-left: 4rem;
+  }
+
   .div_01,
   .div_02,
   .div_03,
@@ -681,7 +684,7 @@ a {
 
   h4,
   h5 {
-    font-size: 60px;
+    font-size: 50px;
     font-family: "optidiannascriptlightagen";
     font-weight: normal;
     font-style: normal;
@@ -694,33 +697,8 @@ a {
   }
 
   .div_projekter {
-    background-color: rgb(249, 156, 231);
-    padding: 40px;
-    height: 800px;
-    place-content: center;
-  }
-  .projekter_1 {
-    margin-left: 3rem;
-  }
-  .projekter_2 {
-    margin-top: 1rem;
-    margin-left: 14rem;
-  }
-  .projekter_3 {
-    margin-top: 1rem;
-    margin-left: 21rem;
-  }
-  .projekter_4 {
-    margin-top: 1rem;
-    margin-left: 28rem;
-  }
-  .projekter_5 {
-    margin-top: 1rem;
-    margin-left: 35rem;
-  }
-  .projekter_6 {
-    margin-top: 1rem;
-    margin-left: 42rem;
+    display: flex;
+    place-content: space-evenly;
   }
 
   .div_footer {

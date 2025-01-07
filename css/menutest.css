@@ -37,21 +37,16 @@ nav {
 
 .div_header_1 {
   display: flex;
-  flex-direction: rows;
+  flex-direction: row;
   place-self: center;
 }
 
 .div_header_2 {
   display: flex;
-  flex-direction: rows;
+  flex-direction: row;
   justify-content: space-around;
   margin-top: 2rem;
-}
-
-.grid_row {
-  place-self: center;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+  margin-bottom: 2rem;
 }
 
 .menu {
@@ -102,17 +97,16 @@ nav.active .menu {
   top: 73px;
   left: 0;
   width: 100%;
-  height: 250px;
+  height: fit-content;
   z-index: 1;
   margin-left: 0;
 }
 
-nav.active .menu li {
-  margin: 5px 20px;
-}
-
 nav.active .menu a {
   font-size: 58px;
+  padding: 12px;
+  padding-top: 0;
+  padding-bottom: 0;
   color: rgb(0, 0, 0);
   font-family: "neue_haas_grotesk_display75Bd";
 }
@@ -141,22 +135,17 @@ nav.active .menu a:hover {
   }
 
   .div_header_1 {
-    margin-top: 4rem;
+    margin-top: 1rem;
     display: flex;
-    flex-direction: rows;
+    flex-direction: row;
     place-self: center;
   }
 
   .div_header_2 {
     display: flex;
-    flex-direction: rows;
+    flex-direction: row;
     justify-content: space-around;
-  }
-
-  .grid_row {
-    place-self: center;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+    margin-bottom: 1rem;
   }
 
   nav.active .menu {
@@ -167,21 +156,19 @@ nav.active .menu a:hover {
     top: 73px;
     width: 100%;
     z-index: 1;
-  }
-
-  nav.active .menu li {
-    margin: 5px 20px;
+    height: fit-content;
   }
 
   nav.active .menu a {
     font-size: 32px;
     color: rgb(0, 0, 0);
     font-family: "neue_haas_grotesk_display75Bd";
+    padding: 8px;
   }
 
   nav.active .menu a:hover {
     transform: scale(1.1);
-    color: rgb(251, 19, 173);
+    color: rgb(249, 47, 209);
   }
 }
 
@@ -195,22 +182,15 @@ nav.active .menu a:hover {
   }
 
   .div_header_1 {
-    margin-top: 4rem;
     display: flex;
-    flex-direction: rows;
+    flex-direction: row;
     place-self: center;
   }
 
   .div_header_2 {
     display: flex;
-    flex-direction: rows;
+    flex-direction: row;
     justify-content: space-around;
-  }
-
-  .grid_row {
-    place-self: center;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
   }
 
   nav.active .menu {
@@ -221,6 +201,7 @@ nav.active .menu a:hover {
     top: 70px;
     width: 100%;
     z-index: 1;
+    height: fit-content;
   }
 
   nav.active .menu li {
@@ -231,10 +212,11 @@ nav.active .menu a:hover {
     font-size: 22px;
     color: rgb(0, 0, 0);
     font-family: "neue_haas_grotesk_display75Bd";
+    padding: 6px;
   }
 
   nav.active .menu a:hover {
     transform: scale(1.03);
-    color: rgb(251, 19, 173);
+    color: rgb(249, 47, 209);
   }
 }
