@@ -154,21 +154,10 @@ span {
 }
 
 .h1_ommig {
-  font-family: "optidiannascriptlightagen";
-  font-size: 35px;
-  margin-top: -16rem;
-  margin-left: 2rem;
-  font-weight: normal;
-  font-style: normal;
-  color: rgb(255, 255, 255);
+  display: none;
 }
 .h1_hej {
-  font-family: "neue_haas_grotesk_disp55roman";
-  font-size: 22px;
-  margin-bottom: 14rem;
-  margin-top: -0.8rem;
-  margin-left: 3rem;
-  color: rgb(255, 255, 255);
+  display: none;
 }
 
 h2 {
@@ -526,15 +515,17 @@ a {
   }
 
   .h1_ommig {
+    display: flex;
     font-family: "optidiannascriptlightagen";
     font-size: 50px;
-    margin-top: -23.5rem;
+    margin-top: -22.5rem;
     margin-left: 2rem;
     font-weight: normal;
     font-style: normal;
     color: rgb(255, 255, 255);
   }
   .h1_hej {
+    display: flex;
     font-family: "neue_haas_grotesk_disp55roman";
     font-size: 36px;
     margin-bottom: 20rem;
