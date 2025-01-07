@@ -339,6 +339,12 @@ a {
 
 /* CV styling */
 
+.img_ommiglogo {
+  width: 40%;
+  place-self: center;
+  margin-top: 2rem;
+}
+
 .grid_1-1-1 {
   display: grid;
   grid-template-columns: 1fr 21px 1fr;
