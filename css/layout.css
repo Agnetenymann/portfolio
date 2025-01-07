@@ -48,6 +48,11 @@ img {
   align-self: stretch;
 }
 
+.grid_1-1-1-1 p {
+  text-align: center;
+  margin: 0;
+}
+
 .grid_1-1_02 img {
   object-fit: cover;
   align-self: stretch;

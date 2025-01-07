@@ -16,17 +16,13 @@ function menuClick() {
 
 document.addEventListener("DOMContentLoaded", () => {
   burger.addEventListener("click", () => {
-    // Skift menuens synlighed
-
     menu.classList.toggle("open");
-
-    // Skift farven og teksten på menu_hover
     menuHover.classList.toggle("active");
 
     if (menu.classList.contains("open")) {
-      menuHover.textContent = "[LUK]"; // Ændr teksten til [LUK]
+      menuHover.textContent = "[LUK]";
     } else {
-      menuHover.textContent = "[MENU]"; // Ændr teksten tilbage til [MENU]
+      menuHover.textContent = "[MENU]";
     }
   });
 });

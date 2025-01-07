@@ -228,7 +228,6 @@ p {
   text-wrap: pretty;
   line-height: 1.9rem;
   text-align: start;
-  /* max-width: 75ch; */
   align-items: start;
   margin: 0 auto;
   font-family: "neue_haas_grotesk_disp55roman";
@@ -260,6 +259,12 @@ ul {
   margin-right: 1rem;
 }
 
+a {
+  font-size: 16px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-family: "neue_haas_grotesk_display65Md";
+}
 /* tekstopsætning */
 
 .div_01,
@@ -352,6 +357,11 @@ a {
 
 .p_cv {
   font-family: "neue_haas_grotesk_display65Md";
+}
+
+.img_ommig {
+  place-self: left center;
+  margin-top: 5rem;
 }
 
 /* projekter forside styling */
@@ -483,6 +493,8 @@ a {
     transform: scale(1.03);
     text-shadow: 5px 5px 10px rgb(249, 47, 209);
   }
+
+  /* tekst */
   .h1_agnete {
     font-family: "DM Serif Text", serif;
     font-size: 110px;
@@ -527,6 +539,7 @@ a {
 }
 
 @media (min-width: 600px) {
+  /* tekst */
   .h1_agnete {
     font-family: "DM Serif Text", serif;
     font-size: 167px;
@@ -535,11 +548,6 @@ a {
     margin-bottom: 15rem;
     text-shadow: 1px 1px 45px rgb(249, 47, 209);
     color: rgb(0, 0, 0);
-  }
-
-  .til_toppen {
-    margin-left: 8rem;
-    margin-top: 2rem;
   }
 
   .radial-gradient {
@@ -552,6 +560,11 @@ a {
     margin-bottom: 10rem;
     text-shadow: 1px 1px 45px rgb(249, 47, 209);
     color: rgb(0, 0, 0);
+  }
+  /* til toppen knap */
+  .til_toppen {
+    margin-left: 8rem;
+    margin-top: 2rem;
   }
 }
 
@@ -566,7 +579,7 @@ a {
     width: 100%;
     margin: 0 auto;
   }
-
+  /* tekst */
   h1 {
     font-family: "neue_haas_grotesk_display35Th";
     font-size: 70px;
@@ -642,7 +655,7 @@ a {
   }
 
   a {
-    font-size: 22px;
+    font-size: 21px;
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-family: "neue_haas_grotesk_display65Md";
@@ -664,24 +677,6 @@ a {
     margin-left: 4rem;
   }
 
-  .div_01,
-  .div_02,
-  .div_03,
-  .div_04,
-  .div_05 {
-    margin-left: 4rem;
-    margin-right: 4rem;
-  }
-
-  .div_06 {
-    margin-left: 5rem;
-    margin-right: 5rem;
-  }
-
-  .figma {
-    height: 230px;
-  }
-
   h4,
   h5 {
     font-size: 50px;
@@ -696,6 +691,26 @@ a {
     text-shadow: 5px 5px 10px rgb(249, 47, 209);
   }
 
+  /* marginer til siderne */
+
+  .div_01,
+  .div_02,
+  .div_03,
+  .div_04,
+  .div_05 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .div_06 {
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
+
+  .figma {
+    height: 230px;
+  }
+
   .div_projekter {
     display: flex;
     place-content: space-evenly;
@@ -707,6 +722,7 @@ a {
     padding: 30px;
   }
 
+  /* footer */
   .f1,
   .f2,
   .f3,
@@ -729,5 +745,11 @@ a {
   .f5:hover {
     transform: scale(1.03);
     text-shadow: 5px 5px 10px rgb(249, 47, 209);
+  }
+
+  /* om mig side */
+  .img_ommig {
+    place-self: left center;
+    margin-top: 1rem;
   }
 }
